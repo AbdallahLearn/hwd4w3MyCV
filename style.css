@@ -17,7 +17,7 @@ body{
     position: relative;
     width:100%;
     min-height:1000px ;
-    max-width: 700px;
+    max-width: 1000px;
     background:#fff;
     display:grid;
     margin:50px;
@@ -35,13 +35,14 @@ body{
     display:flex;
     align-items: center;
     padding-bottom:20px;
-    border-bottom: 1px solid #fff;
+    
 }
 .profileText .imgBx{
     position: relative;
     width:200px;
     height:200px;
     border-radius:50%;
+    border:5px solid white;
     overflow:hidden;
 }
 .profileText .imgBx img{
@@ -66,7 +67,7 @@ body{
     font-weight:300;
 }
 .contactInfo{
-    font-size:14px;
+    font-size:1rem;
     padding-top:40px;
 }
 .title{
@@ -75,15 +76,18 @@ body{
     font-weight: 600;
     letter-spacing:1px;
     margin-bottom:20px;
+    border-bottom:1px solid white;
+    
 }
 .contactInfo ul{
     position:relative;
 }
 .contactInfo ul li{
     position:relative;
-    list-style:none;
+    color:white;
     margin:10px 0;
     cursor:pointer;
+    font-weight: 400;
 }
 .contactInfo ul li .icon{
     display:inline-block;
@@ -99,8 +103,9 @@ body{
     margin-bottom:15px;  
 }
 .contactInfo.education h5{
-    color:#03a9f4;
+    color:white;
     font-weight:500;
+    margin-top:30px;
 }
 .contactInfo.education h4:nth-child(2){
     color:#fff;
@@ -134,23 +139,34 @@ body{
 }
 .about{
     margin-bottom:50px;
+
+}
+.container-about{
+    border-left: 3px solid black;
+    padding:10px;
+    
 }
 .about:last-child{
     margin-bottom:0;
 }
+
 .title2{
     color:#003147;
     text-transform:uppercase;
     letter-spacing:1px;
     margin-bottom:10px;
+    border-bottom:1px solid black;
+    
 }
 p{
     color:#333;
+    line-height: 1.4rem;
 }
 .about .box{
     display:flex;
     flex-direction: row;
     margin:30px 0;
+   
 }
 .about .box .year_company{
     min-width:150px;
@@ -207,6 +223,52 @@ p{
     font-size:18px;
     width:20px;
 }
+
+.skill-list{
+    color:white;
+}
+
+.list-info{
+    list-style:none;
+}
+
+.header-name{
+    margin: 10% 0;
+}
+.first-name{
+    font-size: 3rem;
+    color:#163853;
+}
+.second-name{
+    font-weight:400;
+}
+
+.job-title{
+    font-weight: 400;
+    
+}
+.full-name{
+    display: flex;
+    align-items: baseline;
+}
+.second-name{
+    font-size: 3rem;
+    margin-left:10px ;
+    font-weight: 400;
+}
+.small-line{
+    margin-top: 10px;
+    border-bottom:10px solid #163853;
+    width:15%;
+}
+.container-refe{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+
+
+
 
 @media (max-width:1000px){
     .container{
